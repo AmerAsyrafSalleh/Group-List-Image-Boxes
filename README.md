@@ -1,4 +1,7 @@
 # Group-List-Image-Boxes
+
+You can preview the result here: https://htmlpreview.github.io/?https://github.com/AmerAsyrafSalleh/Group-List-Image-Boxes/blob/main/index.html
+
 This GitHub repository contains a web development project that showcases a user list interface with various interactive features. The project is composed of three main files: `index.html`, `styles.css`, and `script.js`.
 
 ## 1. `index.html`
