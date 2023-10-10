@@ -1,0 +1,114 @@
+/* Base styles for the entire page */
+body{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  min-height: 100vh; /* Ensure a minimum viewport height */
+  padding: 0;
+}
+
+/* Styling for the main container */
+.container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 606px; /* Fixed width of the container */
+}
+
+/* Styling for individual pagination buttons */
+.page-button {
+  border: 1px solid #000000; /* Black border */
+  border-radius: 25%; /* Rounded corners */
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Styling for pagination buttons on hover */
+.page-button:hover {
+  background-color: #4b99ff; /* Light blue background on hover */
+}
+
+/* Styling for the pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for individual user cards */
+.user-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 8px solid; /* Set border properties */
+  cursor: pointer;
+  float: left; /* Float user cards to the left for side-by-side display */
+  height: 150px;
+  margin: 8px; /* Margin around user cards */
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  transition: background-color 0.3s; /* Smooth background color transition */
+  width: 150px;
+}
+
+/* Styling for user card header */
+.user-card .user-header {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff; /* White text color */
+  left: 0;
+  margin-top: 0px;
+  opacity: 1;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: opacity 0.3s; /* Smooth opacity transition */
+  z-index: 2; /* Overlay above user data */
+}
+
+/* Styling for user card hover effect */
+.user-card:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background on hover */
+}
+
+/* Styling for user data container on hover */
+.user-card:hover .user-data {
+  opacity: 1; /* Show user data on hover */
+}
+
+/* Styling for user card header on hover */
+.user-card:hover .user-header {
+  opacity: 0; /* Hide user card header on hover */
+}
+
+/* Styling for user data container */
+.user-data {
+  background-color: rgba(255, 255, 255, 0.75); /* Semi-transparent white background */
+  color: #000; /* Black text color */
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  opacity: 0; /* Initially hidden */
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: opacity 0.3s; /* Smooth opacity transition */
+  z-index: 1; /* Below user header */
+}
+
+/* Styling for the user list container */
+.user-list {
+  display: flex;
+  flex-direction: row; /* Display user cards horizontally */
+  flex-wrap: wrap; /* Allow user cards to wrap to the next line */
+  justify-content: space-around; /* Space between user cards */
+  margin-top: 20px;
+}
